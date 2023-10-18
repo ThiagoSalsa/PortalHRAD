@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import Menu from '@/components/Menu'
-import Slides from '@/components/Slides'
+import Menu from '@/components/Menu/Menu'
+import Slides from '@/components/Slides/Slides'
 
 
 export default function Home() {
