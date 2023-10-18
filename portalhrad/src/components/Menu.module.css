@@ -1,0 +1,41 @@
+
+.header{
+    display: flex;
+    background-color: rgb(227, 227, 238);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+}
+
+.menus{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#btn{
+    
+    cursor: pointer;
+    padding: .5rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 1200px){
+    .menus{
+        display: none;
+    }
+}
+
+
+.topicos a{
+    padding: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+.topicos a:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+

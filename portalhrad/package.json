@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lucide": "^0.287.0",
+    "lucide-react": "^0.287.0",
+    "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "next": "latest"
+    "swiper": "^10.3.1"
   }
 }

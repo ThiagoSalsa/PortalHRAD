@@ -1,17 +1,29 @@
+"use client"
+import {AlignJustify} from 'lucide-react';
+import styles from './Menu.module.css';
+
 export default function Menu(){
+
+
     return (
-        <header className="header">
-            <h1>LOGO</h1>
+        <header className={styles.header}>
             
-            <ul>
-                <li><a href="">Informativos</a></li>
-                <li><a href="">Intranet</a></li>
-                <li><a href="">ExpressoMG</a></li>
-                <li><a href="">Agendas/Cirurgias</a></li>
-                <li><a href="">SIGH</a></li>
-                <li><a href="">Escalas</a></li>
-                <li><a href="">Suporte TI</a></li>
-            </ul>
+            <a href="/"><img src="/FHEMIG.png" alt="Logo da Fundação Hospitalar do Estado de Minas Gerais" /></a>
+
+            <nav className={styles.nav}>
+                <ul className={styles.menus}>
+                    <li className={styles.topicos}><a href="">Informativos</a></li>
+                    <li className={styles.topicos}><a href="">Intranet</a></li>
+                    <li className={styles.topicos}><a href="">ExpressoMG</a></li>
+                    <li className={styles.topicos}><a href="">Agendas/Cirurgias</a></li>
+                    <li className={styles.topicos}><a href="">SIGH</a></li>
+                    <li className={styles.topicos}><a href="">Escalas</a></li>
+                    <li className={styles.topicos}><a href="">Suporte TI</a></li>
+                </ul>
+            </nav>
+
+            <AlignJustify  id={styles.btn}/>
+
         </header>
     )
 }
