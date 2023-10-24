@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
+    "axios": "^1.5.1",
     "lucide": "^0.287.0",
     "lucide-react": "^0.287.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-pdf": "^7.5.1",
+    "react-pdf-viewer": "^0.1.0",
     "swiper": "^10.3.1"
   },
   "devDependencies": {
