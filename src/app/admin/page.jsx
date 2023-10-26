@@ -1,5 +1,6 @@
 "use client"
 import api from './../../services/api';
+import styles from './style.module.css'
 import { useState , useEffect } from 'react';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
@@ -50,10 +51,11 @@ export default function admin(){
         }
     }
     return (
-        <div>
-            <input type="file" multiple onChange={(e) => extraiInformacoesDeArquivos(e)}/>
+        <div className={styles.container}>
+            <div className={styles.title}>Página de controle de escalas - ADMIN</div>
+            <div><input  className={styles.input} type="file" multiple onChange={(e) => extraiInformacoesDeArquivos(e)}/></div>
             {arquivos?.map((arquivo, index) => {
-                return <div key={index}>
+                return <div key={index} className={styles.inputTimer}>
                     <span>{arquivo?.path}</span>
                     <div>
                         <label>Minutos:</label>
@@ -64,8 +66,7 @@ export default function admin(){
                     </div>
                 </div>
             })}
-            <button>Adicionar arquivos</button>
-            <button onClick={() => {submit()}} >Salvar</button>
+            <button className={styles.buttonAdd} onClick={() => {submit()}} >Salvar Arquivos</button>
         </div>
     )
 }

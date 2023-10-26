@@ -64,7 +64,7 @@ export default function SlidesPage() {
         return (
 
             <div>
-                <embed width="100%" height="500" src={`data:application/pdf;base64,${file}`} type="application/pdf"></embed>
+                <embed width="100%" height="1100" src={`data:application/pdf;base64,${file}`} type="application/pdf"></embed>
                 <span>slide: {arquivoAtual}</span>
             </div>
         )
