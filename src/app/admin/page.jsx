@@ -2,6 +2,7 @@
 import api from './../../services/api';
 import styles from './style.module.css'
 import { useState , useEffect } from 'react';
+const response = 'Arquivos enviados com sucesso';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
 console.log(basePath);
@@ -46,10 +47,13 @@ export default function admin(){
         try {
             let response = await api.post('api/arquivos',{arquivos});
             console.log(response);
+
         } catch (error) {
             
         }
     }
+
+
     return (
         <div className={styles.container}>
             <div className={styles.title}>Página de controle de escalas - ADMIN</div>
@@ -66,7 +70,10 @@ export default function admin(){
                     </div>
                 </div>
             })}
-            <button className={styles.buttonAdd} onClick={() => {submit()}} >Salvar Arquivos</button>
+            <button className={styles.buttonAdd} onClick={() => {
+                submit()
+                alert(response)
+                } } >Salvar Arquivos</button>
         </div>
     )
 }

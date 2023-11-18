@@ -1,9 +1,8 @@
 "use client"
-import {AlignJustify} from 'lucide-react';
 import styles from './Menu.module.css';
+import { Activity, Stethoscope } from 'lucide-react';
 
 export default function Menu(){
-
 
     return (
         <header className={styles.header}>
@@ -22,7 +21,7 @@ export default function Menu(){
                 </ul>
             </nav>
 
-            <AlignJustify  id={styles.btn}/>
+            <Activity />
 
         </header>
     )

@@ -1,0 +1,25 @@
+.container{
+  background-image: url('../../public/fundo.jpg');
+  background-size: cover; /* Pode ser 'cover', 'contain' ou um valor específico */
+  background-position: center; /* Ajusta a posição da imagem */
+  margin: 0; /* Remove a margem padrão do corpo */
+  padding: 0; /* Remove o preenchimento padrão do corpo */
+}
+
+.body{
+    margin: 0;
+    margin-top: 50px;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;    
+}
+
